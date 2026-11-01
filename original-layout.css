@@ -270,20 +270,15 @@
     }
 }
 
-/* First project: the source is exported at 2x (1140 x 1040px) and displayed at 570 x 520px. */
-.case-card.pink,
-.case-card.pink a {
-    min-height: 520px;
-}
-
-.first-project-image {
-    width: 570px;
+/* The three card images are exported at 2x and displayed at half their pixel size. */
+.project-image {
+    width: 52%;
     height: 520px;
-    flex: 0 0 570px;
+    flex: 0 0 52%;
     overflow: hidden;
 }
 
-.first-project-image img {
+.project-image img {
     display: block;
     width: 100%;
     height: 100%;
@@ -291,14 +286,9 @@
 }
 
 @media (max-width: 720px) {
-    .case-card.pink,
-    .case-card.pink a {
-        min-height: 555px;
-    }
-
-    .first-project-image {
+    .project-image {
         width: 100%;
         height: 255px;
-        flex: auto;
+        flex: 0 0 100%;
     }
 }
